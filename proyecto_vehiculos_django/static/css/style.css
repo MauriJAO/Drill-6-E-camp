@@ -1,0 +1,27 @@
+body{
+    background-color: #a52a2a !important;
+}
+
+.carousel-item img.carousel-image{
+    height: 550px; 
+    width: 900px;
+}
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 2%;
+    
+}
+
+.marcas img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: solid #000000;
+    background-color: #ffffff;
+    
+}
+

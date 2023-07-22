@@ -1,0 +1,58 @@
+{% load static %}
+
+<h1 class="text-center">Catálogo de vehículos</h1>
+
+<div class="container">
+    <div class="row justify-content-center mt-4" >
+        <div class="col-md-8 d-flex align-items-center justify-content-center ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  >
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="{% static 'images/imagen1.jpg' %}" class="d-block object-cover img-fluid rounded carousel-image" alt="Imagen 1" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/imagen2.jpg' %}" class="d-block object-cover img-fluid rounded carousel-image" alt="Imagen 2" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/imagen3.jpg' %}" class="d-block object-cover img-fluid rounded carousel-image" alt="Imagen 3" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/imagen4.jpg' %}" class="d-block object-cover img-fluid rounded carousel-image" alt="Imagen 4" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/imagen5.jpg' %}" class="d-block object-cover img-fluid rounded carousel-image" alt="Imagen 5" >
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="marcas">
+        <img src="{% static 'images/audi.png' %}" alt="audi">
+        <img src="{% static 'images/ferrari.png' %}" alt="ferrari">
+        <img src="{% static 'images/mitsubishi.png' %}" alt="mitsubishi">
+        <img src="{% static 'images/toyota.png' %}" alt="toyota">
+        <img src="{% static 'images/hyundai.png' %}" alt="hyundai">
+        <img src="{% static 'images/chevrolet.png' %}" alt="chevrolet">
+        <img src="{% static 'images/bmw.png' %}" alt="bmw">
+        <img src="{% static 'images/alfa-romeo.jpg' %}" alt="alfaromeo">
+        <img src="{% static 'images/nissan.jpg' %}" alt="nissan">
+        <img src="{% static 'images/suzuki.png' %}" alt="suzuki">
+        <img src="{% static 'images/kia.png' %}" alt="kia">
+        <img src="{% static 'images/mazda.png' %}" alt="mazda">
+    </div>
+</div>
+<p>Para ver las opciones es necesario estar logueado</p>
+
+
+
+

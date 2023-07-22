@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h2 class="text-center">Añadir auto para su venta</h2>
+    </div>
+
+    <div class="text-center">
+        <p>Complete el siguiente formulario para añadir su auto a la lista de venta</p>
+    </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <div class"container-md">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-4">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Marca:</label>
+                        <select class="form-select" id="autoSizingSelect" name="marca">
+                            <option value="Ford" selected>Ford</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Modelo:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" name="modelo" placeholder="Example input placeholder">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Serial carroceria:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" name="serial_carroceria" placeholder="Another input placeholder">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Serial motor:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" name="serial_motor" placeholder="Another input placeholder">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Categoria:</label>
+                        <select class="form-select" id="autoSizingSelect" name="categoria">
+                            <option value="Particular" selected>Particular</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Carga">Carga</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Precio:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" name="precio" placeholder="Another input placeholder">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock content %}
